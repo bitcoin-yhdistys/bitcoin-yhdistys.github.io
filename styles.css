@@ -30,50 +30,25 @@ body {
     display: block;
     object-fit: cover;
     vertical-align: top;
-    background: #f8f8f8; /* Retain gray background for banner */
+    background: #f8f8f8;
 }
 
-/* Layout with Flexbox */
+/* Layout */
 header {
-    text-align: center; /* Removed background to apply per-element */
+    text-align: left; /* Align header content left */
 }
 
-/* H1 with Flexbox for vertical centering and white background */
+/* H1 with Flexbox for vertical centering and left alignment */
 h1 {
     color: #333;
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 1rem 0;
+    font-size: 1.25rem;
+    margin: 0 auto; /* Center within max-width */
+    padding: 1rem;
+    max-width: 800px; /* Match main's max-width */
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    background: #fff; /* White background for h1 */
-}
-
-nav {
-    background: #e8e8e8; /* Slightly darker gray for nav to stand out */
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-nav li {
-    margin: 0.5rem 1rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #f7931a;
+    background: #fff;
 }
 
 main {
@@ -119,7 +94,7 @@ p {
 }
 
 .board-member p {
-    margin: 0; /* Override global p margin for board-member cards */
+    margin: 0;
     font-size: 1rem;
 }
 
@@ -149,12 +124,7 @@ footer {
     }
     h1 {
         font-size: 1.25rem;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    nav li {
-        margin: 0.5rem 0;
+        padding: 0.5rem;
     }
     main {
         padding: 0 0.5rem;

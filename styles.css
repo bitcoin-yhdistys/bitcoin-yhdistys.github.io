@@ -70,6 +70,33 @@ p {
     margin-bottom: 1rem;
 }
 
+ul {
+    margin: 0 0 1rem 1.25rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #1d4e89;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #1d4e89;
+}
+
+a:hover,
+a:focus {
+    color: #12345e;
+}
+
+a:focus-visible {
+    outline: 2px solid #1d4e89;
+    outline-offset: 2px;
+}
+
 /* Board members card list */
 .board-members {
     display: flex;
@@ -96,15 +123,6 @@ p {
 .board-member p {
     margin: 0;
     font-size: 1rem;
-}
-
-.board-member a {
-    color: #f7931a;
-    text-decoration: none;
-}
-
-.board-member a:hover {
-    text-decoration: underline;
 }
 
 footer {
